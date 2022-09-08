@@ -2,8 +2,8 @@
 body, div, header, footer, aside, article, nav, li, ol, form, span, input, img, p, span, em,
 strong, h1, h2, h3, a { margin: 0; padding: 0;}
 header, footer, aside, article, nav, section {display: block;}
-body, input, select {
-  font-size: 16px;
+html {
+  font-size: 62.5%;
   color: #222;
   font-family: 'Nanum','나눔고딕','돋움','dotum',sans-serif;
   padding: 0;
