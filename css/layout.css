@@ -2,12 +2,6 @@
   padding: 0 5.3%;
 }
 /* header start */
-header {
-
-}
-header nav {
-  
-}
 header nav ul {
   width: 100%;
   height: 15.4rem;
@@ -16,7 +10,9 @@ header nav ul {
   justify-content: space-between;
 }
 header nav ul li {
-  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: -0.05em;
 }
 header nav ul li a {
   display: flex;

@@ -1,0 +1,34 @@
+/* section01 start */
+.section01 {
+  height: calc(100vh - 15.4rem);
+}
+.section01 div {
+  font-size: 2.8rem;
+  letter-spacing: 0.25em;
+  color: #999;
+  margin-bottom: -10px;
+  margin-top: 32px;
+}
+.section01 h1 {
+  font-weight: 700;
+  font-size: 25rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 6.5rem;
+}
+.section01 p {
+  width: 60%;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 4.4rem;
+  letter-spacing: -0.05em;
+}
+.section01 a {
+  font-size: 2.4rem;
+  padding: 13px 65px;
+  background: #fff;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 10%;
+  right: 5.3%;
+}
+/* section01 end */

@@ -3,9 +3,9 @@ body, div, header, footer, aside, article, nav, li, ol, form, span, input, img, 
 strong, h1, h2, h3, a { margin: 0; padding: 0;}
 header, footer, aside, article, nav, section {display: block;}
 html {
+  font-family: 'Inter', sans-serif;
   font-size: 62.5%;
   color: #222;
-  font-family: 'Nanum','나눔고딕','돋움','dotum',sans-serif;
   padding: 0;
   margin: 0;
 }
