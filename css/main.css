@@ -54,7 +54,6 @@
 .section02_wrap .left {
   width: 55%;
 }
-.section02_wrap .left ul {}
 .section02_wrap .left ul li {
   border-bottom: 1px solid #000;
 }
@@ -102,3 +101,28 @@
   text-align: right;
 }
 /* section02 end */
+
+/* section03 start */
+.section03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section03 .swiper {
+  border: 1px solid #000;
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 10.6%);
+  border: 1px solid #000;
+}
+.slide_wrap {
+  width: 800px;
+  height: 100vh;
+  padding: 0 5.3%;
+}
+/* section03 end */

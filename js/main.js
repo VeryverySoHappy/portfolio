@@ -1,56 +1,56 @@
-$(".section").each(function () {
+// $(".section").each(function () {
 
-  // 개별적으로 Wheel 이벤트 적용
+//   // 개별적으로 Wheel 이벤트 적용
 
-  $(this).on("mousewheel DOMMouseScroll", function (e) {
+//   $(this).on("mousewheel DOMMouseScroll", function (e) {
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    var delta = 0;
+//     var delta = 0;
 
-    if (!event) event = window.event;
+//     if (!event) event = window.event;
 
-    if (event.wheelDelta) {
+//     if (event.wheelDelta) {
 
-      delta = event.wheelDelta / 120;
+//       delta = event.wheelDelta / 120;
 
-      if (window.opera) delta = -delta;
+//       if (window.opera) delta = -delta;
 
-    } else if (event.detail) delta = -event.detail / 3;
+//     } else if (event.detail) delta = -event.detail / 3;
 
-    var moveTop = null;
+//     var moveTop = null;
 
-    if (delta < 0) {
+//     if (delta < 0) {
 
-      if ($(this).next() != undefined) {
+//       if ($(this).next() != undefined) {
 
-        moveTop = $(this).next().offset().top;
+//         moveTop = $(this).next().offset().top;
 
-      }
+//       }
 
-    } else {
+//     } else {
 
-      if ($(this).prev() != undefined) {
+//       if ($(this).prev() != undefined) {
 
-        moveTop = $(this).prev().offset().top;
+//         moveTop = $(this).prev().offset().top;
 
-      }
+//       }
 
-    }
+//     }
 
-    $("html,body").stop().animate({
+//     $("html,body").stop().animate({
 
-      scrollTop: moveTop + 'px'
+//       scrollTop: moveTop + 'px'
 
-    }, {
+//     }, {
 
-      duration: 800,
-      complete: function () {
+//       duration: 800,
+//       complete: function () {
 
-      }
+//       }
 
-    });
+//     });
 
-  });
+//   });
 
-});
+// });
