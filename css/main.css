@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .section {
   width: 100%;
   height: 100vh;
@@ -8,14 +10,15 @@
 .section01 {
   padding-top: 19rem;
 }
-.section01 div {
+.section01 .portfolio {
   font-size: 2.8rem;
   letter-spacing: 0.25em;
   color: #999;
   margin-bottom: -10px;
   margin-top: 32px;
+  font-weight: normal;
 }
-.section01 h1 {
+.section01 h2 {
   font-weight: 700;
   font-size: 25rem;
   letter-spacing: -0.03em;
@@ -28,7 +31,7 @@
   line-height: 2.5;
   letter-spacing: -0.05em;
 }
-.section01 a {
+.section01 button {
   font-size: 2.4rem;
   padding: 13px 65px;
   background: #fff;
@@ -51,16 +54,16 @@
   height: 73%;
   padding-top: 11rem;
 }
-.section02_wrap .left {
+.section02_wrap .link_list {
   width: 55%;
 }
-.section02_wrap .left ul li {
+.section02_wrap .link_list ul li {
   border-bottom: 1px solid #000;
 }
-.section02_wrap .left ul li:first-child {
+.section02_wrap .link_list ul li:first-child {
   border-top: 2.5px solid #000;
 }
-.section02_wrap .left ul li a{
+.section02_wrap .link_list ul li a{
   width: 100%;
   font-size: 4rem;
   letter-spacing: -0.05em;
@@ -68,7 +71,7 @@
   padding: 27px 0;
   position: relative;
 }
-.section02_wrap .left ul li a:after {
+.section02_wrap .link_list ul li a:after {
   content: '';
   position: absolute;
   width: 25px;
@@ -79,26 +82,21 @@
   right: 2%;
   transform: rotate(45deg) translate(-50%);
 }
-.section02_wrap .right {
+.section02_wrap .section02_title {
   width: 35%;
 }
-.section02_wrap .right h2 {
+.section02_wrap .section02_title h2 {
   font-size: 6rem;
   font-weight: normal;
   letter-spacing: -0.05em;
   margin-top: -50px;
 }
-.section02_wrap .right div {
+.section02_wrap .section02_title div {
   font-size: 15rem;
   transform: rotate(38.72deg);
   margin: 16rem auto 0 auto;
   width: 379px;
   height: 130px;
-}
-.section02 p {
-  font-size: 1.6rem;
-  font-weight: 500;
-  text-align: right;
 }
 /* section02 end */
 
@@ -116,13 +114,19 @@
 .swiper-slide {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: calc(100% - 10.6%);
-  border: 1px solid #000;
-}
-.slide_wrap {
-  width: 800px;
+  justify-content: space-between;
   height: 100vh;
-  padding: 0 5.3%;
 }
+.swiper-slide img {
+  width: 70%;
+}
+.portfolio_explain {
+  width: 25%;
+}
+.portfolio_explain h2 {}
+.portfolio_explain p {}
+.portfolio_explain a {}
+.portfolio_explain dl {}
+.portfolio_explain dl dt {}
+.portfolio_explain dl dd {}
 /* section03 end */

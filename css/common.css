@@ -38,3 +38,12 @@
   clear: both;
   width: 100%;
 }
+main {
+  padding: 0 5.3%;
+}
+.email {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: right;
+}
