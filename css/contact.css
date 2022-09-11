@@ -2,8 +2,7 @@
 
 main {
   height: 100vh;
-  padding-top: 178px;
-  border: 1px solid #000;
+  padding-top: 9.5%;
   box-sizing: border-box;
 }
 .section_title {
@@ -23,35 +22,123 @@ p {
 }
 .section_title h2:after {
   content: '';
-  width: 56px;
-  bottom: -17px;
+  width: 3.3%;
+  height: 3px;
   position: absolute;
   left: 0;
-  height: 3px;
+  bottom: -35%;
   background: #000;
 }
 .link_list {
   width: 80%;
-  height: 500px;
   margin: 0 auto;
 }
 .link_list li {
   float: left;
   width: 33.333%;
-  padding-top: 128px;
+  padding-top: 9.5%;
 }
-img {
+.link_list img {
   float: left;
-  width: 16%;
-  padding-right: 9%;
+  width: 12%;
+  padding: 3.5% 0;
 }
 .link_text {
   float: right;
-  width: 75%;
+  width: 76.5%;
 }
 h3 {
   font-weight: normal;
   font-size: 3.6rem;
   letter-spacing: -0.05em;
-  margin-bottom: 16px;
+  margin-bottom: 5%;
 }
+
+/* reponsive  start */
+@media screen and (max-width:1600px) {
+  main {
+    padding-top: 12%;
+  }
+}
+@media screen and (max-width:1024px) {
+  main {
+    padding-top: 18%;
+  }
+  .link_list {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .link_list li {
+    width: 50%;
+    padding-top: 5%;
+  }
+}
+@media screen and (max-width:768px) {
+  main {
+    height: 100vh;
+    padding-top: 20.5%;
+    box-sizing: border-box;
+  }
+  .link_list {
+    width: 100%;
+  }
+  .link_list li {
+    padding-top: 6%;
+  }
+  .link_list li:first-child,
+  .link_list li:nth-child(2) {
+    padding-top: 10%;
+  }
+  .link_list img {
+    float: none;
+    width: 25%;
+    padding: 4.5% 35%;
+    margin: 0 auto;
+  }
+  .link_text {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 4%;
+    margin-top: 3%;
+  }
+}
+@media screen and (max-width:450px) {
+  main {
+    height: 150vh;
+    padding-top: 28%;
+  }
+  .link_list {
+    width: 100%;
+  }
+  .section_title h2 {
+    font-size: 3rem;
+  }
+  .section_title h2:after {
+    width: 12.5%;
+    height: 2px;
+  }
+  .link_list li {
+    padding-top: 10%;
+  }
+  .link_list img {
+    width: 30%;
+    padding: 4.5% 35%;
+    margin: 0 auto;
+  }
+  .link_text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+  .link_text p {
+    width: 100%;
+  }
+}
+/* reponsive  end */
