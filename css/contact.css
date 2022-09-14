@@ -9,14 +9,14 @@ main {
   letter-spacing: -0.05em;
 }
 .section_title p,
-p {
+.link_text p {
   font-size: 1.6rem;
 }
 .section_title p {
   color: #999999;
 }
 .link_list {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .link_list li {
