@@ -27,16 +27,21 @@ $(".section").each(function () {
   });
 });
 
-// about start
-$('.navi li').mouseenter(function(){
-  var changeImage = $(this).attr('data-image')
-  $('.photo').css({
-    'background-image': 'url('+ changeImage +')'
-  })
+// study_wrap start
+$('.list_01').hover(function(){
+  $('.study_wrap:eq(0)').css('display', 'block')
+  $('.study_wrap:not(:eq(0))').css('display', 'none')
 })
-$('.navi li').mouseleave(function(){
-  $('.photo').css({
-    'background-image': ''
-  })
+$('.list_02').hover(function() {
+  $('.study_wrap:eq(1)').css('display','block')
+  $('.study_wrap:not(:eq(1))').css('display', 'none')
 })
-// about end
+$('.list_03').hover(function() {
+  $('.study_wrap:eq(2)').css('display', 'block')
+  $('.study_wrap:not(:eq(2))').css('display', 'none')
+})
+$('.list_04').hover(function() {
+  $('.study_wrap:eq(3)').css('display', 'block')
+  $('.study_wrap:not(:eq(3))').css('display', 'none')
+})
+// study_wrap end
