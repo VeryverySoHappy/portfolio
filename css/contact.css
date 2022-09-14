@@ -15,20 +15,6 @@ p {
 .section_title p {
   color: #999999;
 }
-.section_title h2 {
-  font-weight: normal;
-  font-size: 4rem;
-  position: relative;
-}
-.section_title h2:after {
-  content: '';
-  width: 3.3%;
-  height: 3px;
-  position: absolute;
-  left: 0;
-  bottom: -35%;
-  background: #000;
-}
 .link_list {
   width: 80%;
   margin: 0 auto;
@@ -113,13 +99,6 @@ h3 {
   }
   .link_list {
     width: 100%;
-  }
-  .section_title h2 {
-    font-size: 3rem;
-  }
-  .section_title h2:after {
-    width: 12.5%;
-    height: 2px;
   }
   .link_list li {
     padding-top: 10%;

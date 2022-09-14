@@ -1,0 +1,205 @@
+/* section01 start */
+.section01 {
+  width: 100%;
+  height: 665px;
+  position: relative;
+  padding-top: 207px;
+  margin-bottom: 203px;
+}
+.section01 .smile_y {
+  width: 522px;
+  height: 462px;
+  position: relative;
+  float: left;
+  margin-top: 17px;
+}
+.section01 .smile_y .circle {
+  width: 358px;
+  height: 358px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffe769;
+  border-radius: 100%;
+}
+.smile_y img {
+  position: absolute;
+  top: 55px;
+  left: 0;
+}
+.section01_text {
+  width: 845px;
+  height: 462px;
+  padding: 50px 125px 0 200px;
+  float: right;
+}
+.section01_text h3 {
+  font-weight: normal;
+  font-size: 60px;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+.section01_text p {
+  font-size: 20px;
+  line-height: 35px;
+}
+.section01 a {
+  display: inline-block;
+  width: 10%;
+  margin-top: 60px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* section01 end */
+/* section02 start */
+.section02 {
+  padding-top: 100px;
+  display: flex;
+}
+.section02 .skill_text {
+  width: 992px;
+  height: 100%;
+  padding: 130px 0;
+  border-right: 1px solid #000;
+  position: sticky;
+  top: 0;
+}
+.section02 .skill_text p {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+.section_title {
+  width: 741px;
+  height: 416px;
+  margin-top: 130px;
+  position: relative;
+}
+.section_title .subpage_wrap {
+  width: 358px;
+  height: 358px;
+  margin-top: 53px;
+  position: relative;
+  background-color: #ffe769;
+  border-radius: 100%;
+}
+.subpage_wrap .subpage_title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.section_title .smile {
+  font-size: 180px;
+  transform: rotate(60deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.skill_explain {
+  width: 390px;
+  height: 4270px;
+  padding: 0px 135px 0 176px;
+}
+.skill_explain ul li {
+  padding-bottom: 163px;
+}
+.skill_explain li h3 {
+  font-weight: normal;
+  font-size: 60px;
+  padding-bottom: 42px;
+}
+.skill_explain li:nth-child(2n) h3 {
+  text-align: right;
+}
+.skill_explain ul li p {
+  font-size: 16px;
+  line-height: 30px;
+  width: 101%;
+}
+.skill_explain ul li:nth-child(2n) p {
+  text-align: right;
+}
+/* section02 end */
+/* section03 start */
+.section03 {
+  padding: 130px 0 263px 0;
+  position: relative;
+}
+.decoration {
+  height: 325px;
+  position: relative;
+}
+.decoration a {
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.decoration .large_c {
+  width: 325px;
+  height: 325px;
+  background-color: #ffee96;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  border-radius: 100%;
+}
+.decoration .small_c {
+  width: 98px;
+  height: 98px;
+  background-color: #fff8d2;
+  border-radius: 100%;
+  position: absolute;
+  top: 245px;
+  right: 440px
+}
+.section03 .subpage_title:after {
+  bottom: -25%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.navi {
+  padding-top: 150px;
+}
+.navi li a {
+  display: inline-block;
+  width: 690px;
+  font-size: 24px;
+  padding: 17px 0 17px 10px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.navi li:first-child a {
+  border-top: 2.5px solid #000;
+}
+.navi li a span {
+  position: absolute;
+  right: 20px;
+}
+.study_wrap {
+  width: 700px;
+}
+.study_wrap img {
+  width: 261px;
+  padding-bottom: 63px;
+}
+.study_wrap .study_subtitle {
+  font-size: 16px;
+  color: #999;
+  padding-bottom: 10px;
+}
+.study_wrap h3 {
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 36px;
+}
+.study_wrap .study_explain {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+/* section03 end */
