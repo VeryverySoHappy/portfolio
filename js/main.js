@@ -38,7 +38,7 @@ $(".section").each(function () {
 
 // scroll start
 $(document).ready(function(){
-  $('.scroll_down').click(function(){
+  $('#scroll_btn').click(function(){
     var offset = $('#scroll_section').offset();
     $('html').animate({scrollTop : offset.top}, 500);
   })
