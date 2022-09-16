@@ -4,8 +4,9 @@ body, div, header, footer, aside, article, nav, li, ol, form, span, input, img, 
 strong, h1, h2, h3, a { margin: 0; padding: 0;}
 header, footer, aside, article, nav, section {display: block;}
 html {
+  background-color: #fff;
   font-family: 'Inter', sans-serif;
-  font-size: 62.5%;
+  font-size: 16px;
   color: #222;
   padding: 0;
   margin: 0;
