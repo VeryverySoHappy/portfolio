@@ -38,33 +38,12 @@
   bottom: 10%;
   right: 5.3%;
   cursor: pointer;
-  overflow: hidden;
-  --a: initial;
   color: #000;
-  transition: 0.5s;
+  transition: .5s;
 }
 #scroll_btn:hover {
   background-color: #000;
   color: #fff;
-}
-#scroll_btn:after {
-  content: "";
-  position: absolute;
-  top: var(--top);
-  left: var(--left);
-  width: var(--diameter);
-  height: var(--diameter);
-  transform: scale(0);
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: var(--a);
-}
-@keyframes ripple-effect {
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
 }
 /* section01 end */
 

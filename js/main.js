@@ -36,27 +36,14 @@ $(".section").each(function () {
 });
 //section end
 
-// scroll_btn start
-const btn = document.getElementById('scroll_btn')
-
-const onClick = e => {
-  const { x, y, width, height} = btn.getBoundingClientRect()
-  const radius = Math.sqrt(width * width + height * height)
-  btn.style.setProperty('--diameter', radius * 2 + 'px')
-  const { clientX, clientY } = e
-  const left = (clientX - x - radius) / width * 100 + '%'
-  const top = (clientY - y - radius) / height * 100 + '%'
-
-  btn.style.setProperty('--left', left)
-  btn.style.setProperty('--top', top)
-  btn.style.setProperty('--a', '')
-  setTimeout(() => {
-    btn.style.setProperty('--a', 'ripple-effect 500ms linear')
-  }, 5)
-}
-
-btn.addEventListener('click', onClick)
-// scroll_btn end
+// scroll start
+$(document).ready(function(){
+  $('.scroll_down').click(function(){
+    var offset = $('#scroll_section').offset();
+    $('html').animate({scrollTop : offset.top}, 500);
+  })
+})
+// scroll end
 
 // study_wrap start
 $('.list_01').hover(function(){
