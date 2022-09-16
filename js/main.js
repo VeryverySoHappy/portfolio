@@ -36,14 +36,18 @@ $(".section").each(function () {
 });
 //section end
 
-// scroll start
+// scroll and work start
 $(document).ready(function(){
   $('#scroll_btn').click(function(){
     var offset = $('#scroll_section').offset();
-    $('html').animate({scrollTop : offset.top}, 500);
+    $('html').animate({scrollTop : offset.top}, 800);
+  })
+  $('#portfolio').click(function(){
+    var workoffset = $('#section03').offset();
+    $('html').animate({scrollTop : workoffset.top}, 800);
   })
 })
-// scroll end
+// scroll and work end
 
 // study_wrap start
 $('.list_01').hover(function(){
