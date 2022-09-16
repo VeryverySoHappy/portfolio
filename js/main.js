@@ -1,3 +1,11 @@
+// menu start
+$('.toggle_menu').click (function(){
+  $(this).toggleClass('active');
+  $('#menu').toggleClass('open');
+});
+// menu end
+
+// section start
 $(".section").each(function () {
   $(this).on("mousewheel DOMMouseScroll", function (e) {
     e.preventDefault();
@@ -26,6 +34,7 @@ $(".section").each(function () {
     });
   });
 });
+//section end
 
 // study_wrap start
 $('.list_01').hover(function(){

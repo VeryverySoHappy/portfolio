@@ -7,16 +7,15 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 15.4rem;
-  padding: 0 5.3%;
+  padding: 60px 5.3% 15px 5.3%;
+  background: #fff;
   box-sizing: border-box; 
   z-index: 2;
 }
 header h1,
 header nav ul li {
   font-weight: 400;
-  font-size: 1.4rem;
-  letter-spacing: -0.05em;
+  font-size: 14px;
 }
 header h1 a {
   display: flex;
@@ -24,23 +23,123 @@ header h1 a {
   justify-content: center;
 }
 .logo_smile {
-  font-size: 2.5rem;
+  font-size: 25px;
 }
 .logo_smile,
 header nav ul li a div {
-  padding-right: 1.6rem;
+  padding-right: 16px;
 }
 header nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* header end */
-@media screen and (max-width:450px) {
-  header {
-    height: 8.5rem;
-  }
+/* menu start */
+#menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
 }
+#menu ul a {
+  transition: opacity 0.3s ease-in-out;
+}
+#menu ul:hover a {
+  opacity: 0.5;
+}
+#menu ul a:hover {
+  opacity: 1;
+}
+#menu .main_nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#menu .main_nav .toggle_menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  padding: 60px 5.3% 0 5.3%;
+}
+#menu .main_nav .toggle_menu div {
+  padding-right: 16px;
+}
+#menu .main_nav ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#menu .main_nav a {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+}
+#menu .main_nav a:first {
+  padding-top: 0;
+}
+#menu .menu_linklist {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3rem;
+  border-top: 1px solid #fff;
+}
+#menu .menu_linklist nav {
+  width: 60%;
+  margin: 0 auto;
+}
+.menu_linklist ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.menu_linklist a {
+  display: inline-block;
+  color: #fff;
+}
+/* menu open start */
+#menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+#menu.open li {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+#menu.open li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#menu.open li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#menu.open li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#menu.open li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+/* menu open end */
+/* menu end */
+/* header end */
 
 /* footer start */
 footer {
