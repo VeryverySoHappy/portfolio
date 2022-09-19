@@ -59,6 +59,21 @@
   bottom: -35%;
   background: #000;
 }
+@media screen and (max-width:1600px) {
+  .email {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .email {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .email {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (max-width:450px) {
   .subpage_title {
     font-size: 3rem;
