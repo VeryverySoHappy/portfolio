@@ -569,8 +569,6 @@
     order: 2;
     width: 100%;
   }
-  .portfolio_explain h2 {
-  }
   .mobile_02 {
     display: block;
     width: 100%;
@@ -639,7 +637,7 @@
   }
   .swiper-horizontal>.swiper-pagination-bullets, 
   .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 2%;
+    bottom: 1%;
     left: 0;
     width: 100%;
   }  
