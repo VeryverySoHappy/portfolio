@@ -72,7 +72,7 @@ header nav ul li a {
   font-size: 14px;
   color: #fff;
   display: flex;
-  padding: 60px 5.3% 0 5.3%;
+  padding: 3.1% 5.3% 1% 5.3%;
 }
 #menu .main_nav .toggle_menu div {
   padding-right: 16px;
@@ -142,20 +142,28 @@ header nav ul li a {
 /* menu end */
 /* responsive start */
 @media screen and (max-width:1600px) {
-  header {
-    /* padding: 2.7% 5.3% 0.3% 5.3%; */
-  }
   #menu .menu_linklist {
-    padding: 2.5% 0;
+    padding: 2.5%;
   }
 }
-@media screen and (max-width:1280px) {
-
+@media screen and (max-width:768px) {
+  #menu .main_nav a {
+    font-size: 30px;
+    padding: 5% 0;
+  }
 }
-@media screen and (max-width:1024px) {}
-@media screen and (max-width:960px) {}
-@media screen and (max-width:768px) {}
-@media screen and (max-width:450px) {}
+@media screen and (max-width:450px) {
+  #menu .menu_linklist {
+    padding: 7%;
+  }
+  #menu .menu_linklist nav {
+    width: 85%;
+  }
+  #menu .main_nav a {
+    font-size: 50px;
+    padding: 5% 0;
+  }
+}
 /* responsive end */
 /* header end */
 

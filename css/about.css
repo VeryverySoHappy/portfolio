@@ -7,7 +7,6 @@ main {
   height: 665px;
   position: relative;
   padding-top: 207px;
-  margin-bottom: 203px;
 }
 .section01 .smile_y {
   width: 522px;
@@ -16,14 +15,12 @@ main {
   float: left;
   margin-top: 17px;
 }
-.section01 .smile_y .circle {
+.section01 .smile_y .yellow_c {
   width: 358px;
   height: 358px;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ffe769;
-  border-radius: 100%;
   animation: yellow_circle 3s linear;
 }
 @keyframes yellow_circle {
@@ -40,7 +37,7 @@ main {
     top: 0;
   }
 }
-.smile_y img {
+.smile_y .smile_c {
   position: absolute;
   top: 55px;
   left: 0;
@@ -69,11 +66,9 @@ main {
 }
 @keyframes slideY {
   0% {
-    /* transform: translateY(50px); */
     opacity: 0;
   }
   100% {
-    /* transform: translateY(0px); */
     opacity: 1;
   }
 }
@@ -88,20 +83,168 @@ main {
   line-height: 35px;
 }
 .section01 a {
-  display: inline-block;
-  width: 10%;
-  margin-top: 60px;
-  text-align: right;
   position: absolute;
   bottom: 0;
   right: 0;
 }
+/* responsive start */
+@media screen and (max-width:1600px) {
+  .section01 {
+    width: 100%;
+    height: 71vh;
+    padding-top: 14%;
+    margin-bottom: 5%;
+  }
+  .section01 .smile_y {
+    width: 34%;
+    height: 70%;
+    margin-top: 1%;
+  }
+  .section01 .smile_y .yellow_c {
+    width: 80%;
+    right: -6%;
+  }
+  @keyframes yellow_circle {
+    0% {
+      top: 35%;
+    }
+    30% {
+      top: -15%;
+    }
+    75% {
+      top: 35%;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  .smile_y .smile_c {
+    top: 11%;
+    left: 0;
+    width: 80%;
+    height: auto;
+  }
+  @keyframes smile_circle {
+    0% {
+      top: -20%;
+    }
+    30% {
+      top: 25%;
+    }
+    75% {
+      top: 0;
+    }
+    100% {
+      top: 10%;
+    }
+  }
+  .section01_text {
+    width: 49%;
+    height: 65%;
+    padding: 3% 7.3% 0 9%;
+  }
+  .section01_text h3 {
+    font-size: 3.75rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 6%;
+  }
+  .section01_text p {
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+  }
+}
+@media screen and (max-width:1280px) {
+  .section01 .smile_y .yellow_c {
+    top: -6%;
+    right: 0%;
+  }
+  .section01_text h3 {
+    font-size: 3rem;
+  }
+  .section01_text p {
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .section01 .smile_y .yellow_c {
+    top: -40%;
+    right: 0%;
+  }
+  .section01_text h3 {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+  }
+  .section01_text p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .section01_text h3 {
+    font-size: 1.8rem;
+  }
+  .section01_text p {
+    font-size: 11px;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width:450px) {
+  .section01 {
+    height: 110vh;
+    padding-top: 22%;
+  }
+  .section01 .smile_y {
+    width: 100%;
+    height: 45%;
+    margin-top: 10%;
+  }
+  .section01 .smile_y .yellow_c {
+    top: -16%;
+  }
+  @keyframes yellow_circle {
+    0% {
+      top: 10%;
+    }
+    30% {
+      top: -20%;
+    }
+    75% {
+      top: 0%;
+    }
+    100% {
+      top: -16%;
+    }
+  }
+  .smile_y .smile_c {
+    animation: none;
+  }
+  .section01_text {
+    width: 100%;
+    height: 45%;
+    padding: 0;
+    animation: none;
+    z-index: 1;
+  }
+  .section01_text h3 {
+    font-size: 2.5rem;
+    padding: 30px 0 0 0;
+  }
+  .section01_text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+/* responsive end */
 /* section01 end */
+
 /* section02 start */
 .section02 {
-  padding-top: 100px;
+  padding-top: 203px;
   display: flex;
 }
+.section02 .mob {
+  display: none;
+} 
 .section02 .skill_text {
   width: 992px;
   height: 100%;
@@ -121,16 +264,21 @@ main {
   position: relative;
 }
 .section_title .subpage_wrap {
+  position: relative;
+  width: 741px;
+  height: 363px;
+  padding-top: 53px;
+}
+.subpage_wrap img {
+  position: absolute;
   width: 358px;
   height: 358px;
-  margin-top: 53px;
-  position: relative;
-  background-color: #ffe769;
-  border-radius: 100%;
+  bottom: 0;
+  left: 0;
 }
 .subpage_wrap .subpage_title {
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 0;
 }
 .section_title .smile {
@@ -143,6 +291,9 @@ main {
 .skill_list {
   width: 700px;
   height: 4270px;
+}
+.skill_list ul {
+  padding-top: 48px;
 }
 .skill_list ul li {
   padding: 82px 125px 82px 166px;
@@ -181,39 +332,218 @@ main {
 .skill_list ul li:nth-child(2n) p {
   text-align: right;
 }
+/* responsive start */
+@media screen and (max-width:1600px) {
+  .section02 {
+    padding-top: 6%;
+  }
+  .section02 .skill_text {
+    width: 58.3%;
+    padding: 7.6% 0;
+  }
+  .section02 .skill_text p {
+    font-size: 2.1rem;
+  }
+  .section_title {
+    width: 74.5%;
+    height: 50%;
+    margin-top: 13%;
+  }
+  .section_title .subpage_wrap {
+    width: 100%;
+    height: 330px;
+    padding-top: 8%;
+  }
+  .subpage_wrap img {
+    width: 48%;
+    bottom: 0;
+    left: 0;
+  }
+  .subpage_wrap .subpage_title {
+    top: 20%;
+    left: 0;
+  }
+  .section_title .smile {
+    font-size: 10rem;
+  }
+  .skill_list {
+    width: 40.5%;
+    height: 100%;
+  }
+  .skill_list ul li {
+    padding: 8.5% 19%;
+  }
+  .skill_list ul li .percent {
+    font-size: 23rem;
+    letter-spacing: -2rem;
+  }
+  .skill_list ul li .percent span {
+    font-size: 5rem;
+  }
+  .skill_list li h3 {
+    font-size: 3.75rem;
+    padding-bottom: 9.5%;
+  }
+  .skill_list li:nth-child(2n) h3 {
+    text-align: right;
+  }
+  .skill_list ul li p {
+    font-size: 0.9rem;
+    line-height: 1.85rem;
+  }
+  .skill_list ul li:nth-child(2n) p {
+    text-align: right;
+  }
+}
+@media screen and (max-width:1280px) {
+  .section02 .skill_text p {
+    font-size: 1.8rem;
+  }
+  .section_title {
+    width: 74.5%;
+    height: 50%;
+    margin-top: 13%;
+  }
+  .section_title .subpage_wrap {
+    height: 300px;
+  }
+  .section_title .smile {
+    font-size: 8rem;
+  }
+  .skill_list ul li {
+    padding: 8.5% 19%;
+  }
+  .skill_list ul li .percent {
+    font-size: 16rem;
+    letter-spacing: -1.5rem;
+  }
+  .skill_list ul li .percent span {
+    font-size: 2.5rem;
+  }
+  .skill_list li h3 {
+    font-size: 3rem;
+    padding-bottom: 9%;
+  }
+  .skill_list ul li p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    letter-spacing: 0px;
+  }
+}
+@media screen and (max-width:1024px) {
+  .section02 .skill_text {
+    padding: 9% 0;
+  }
+  .section02 .skill_text p {
+    font-size: 1.5rem;
+  }
+  .section_title .subpage_wrap {
+    height: 280px;
+  }
+  .skill_list li h3 {
+    font-size: 2rem;
+    padding-bottom: 8%;
+  }
+  .skill_list ul li p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:768px) {
+  .section02 .skill_text {
+    padding: 10% 0;
+  }
+  .section02 .skill_text p {
+    font-size: 1.1rem;
+  }
+  .section_title .subpage_wrap {
+    height: 150px;
+  }
+  .subpage_wrap img {
+    height: auto;
+  }
+  .section_title .smile {
+    font-size: 6rem;
+  }
+  .skill_list ul li {
+    padding: 10% 0% 10% 19%;
+  }
+  .skill_list li h3 {
+    font-size: 2rem;
+  }
+  .skill_list ul li p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width:450px) {
+  .section02 {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .section02 .mob {
+    display: block;
+    text-align: right;
+    padding-right: 10%;
+    box-sizing: border-box;
+  }
+  .section02 .skill_text {
+    width: 100%;
+    height: 170px;
+    padding-top: 65px;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .section02 .skill_text p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .section_title .subpage_wrap {
+    position: absolute;
+    padding-top: 0;
+    top: 0;
+  }
+  .skill_list {
+    width: 100%;
+  }
+  .skill_list ul li {
+    padding: 10% 5.3% 10% 5.3%;
+  }
+  .skill_list ul li p {
+    font-size: 0.8rem;
+  }
+}
+/* responsive end */
 /* section02 end */
+
 /* section03 start */
 .section03 {
   padding: 130px 0 263px 0;
   position: relative;
 }
 .decoration {
-  height: 325px;
+  height: 335px;
   position: relative;
 }
-.decoration a {
-  font-size: 20px;
+.section03 .decoration .email {
   position: absolute;
   top: 25%;
   left: 30%;
 }
 .decoration .large_c {
-  width: 325px;
-  height: 325px;
-  background-color: #ffee96;
+  width: 340px;
+  height: 340px;
   position: absolute;
   top: 0;
   right: 80px;
-  border-radius: 100%;
 }
 .decoration .small_c {
   width: 98px;
   height: 98px;
-  background-color: #fff8d2;
-  border-radius: 100%;
   position: absolute;
   top: 245px;
-  right: 440px
+  right: 440px;
 }
 .section03 .subpage_title:after {
   bottom: -25%;
@@ -272,126 +602,124 @@ main {
   line-height: 30px;
   letter-spacing: -1px;
 }
+/* responsive start */
+@media screen and (max-width:1600px) {
+  .section03 {
+    padding: 7.5% 0 15.5% 0;
+  }
+  .decoration {
+    height: 335px;
+  }
+  .decoration .large_c {
+    width: 20%;
+    height: auto;
+    right: 4.7%;
+  }
+  .decoration .small_c {
+    width: 5.8%;
+    height: auto;
+    top: 73%;
+    right: 26%;
+  }
+  .navi {
+    padding-top: 11%;
+  }
+  .navi li a {
+    width: 186.5%;
+    font-size: 1.5rem;
+    padding: 4.5% 0 4.5% 2.5%;
+  }
+  .navi li a span {
+    right: 3%;
+  }
+  .study_wrap {
+    width: 41%;
+  }
+  .study_wrap img {
+    width: 37.5%;
+    padding-bottom: 8.8%;
+  }
+  .study_wrap .study_subtitle {
+    font-size: 1rem;
+    padding-bottom: 1.5%;
+  }
+  .study_wrap h3 {
+    font-size: 1.5rem;
+    padding-bottom: 5.2%;
+  }
+  .study_wrap .study_explain {
+    font-size: 1rem;
+    line-height: 1.9rem;
+    letter-spacing: -1px;
+  }  
+}
+@media screen and (max-width:1280px) {
+  .decoration {
+    height: 225px;
+    /* padding: 3% 0; */
+  }
+  .navi li a {
+    font-size: 1.15rem;
+  }
+  .section03 .subpage_title {
+    padding-top: 3%;
+  }
+  .study_wrap .study_subtitle {
+    font-size: 0.8rem;
+  }
+  .study_wrap h3 {
+    font-size: 1.2rem;
+  }
+  .study_wrap .study_explain {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    letter-spacing: 0px;
+  }  
+}
+@media screen and (max-width:1024px) {
+  .navi li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .navi {
+    padding-top: 20%;
+  }
+  .navi li a {
+    font-size: 0.8rem;
+  }
+  .study_wrap .study_explain {
+    width: 100%;
+  }
+}
+@media screen and (max-width:450px) {
+  .section03 {
+    padding-top: 75%;
+    margin-top: 20%;
+  }
+  .large_c,
+  .small_c {
+    display: none;
+  }
+  .line_03 {
+    position: absolute;
+    top: 5%;
+  }
+  .navi {
+    padding-top: 0px;
+  }
+  .navi li a {
+    font-size: 12px;
+  }
+  .study_wrap {
+    width: 100%;
+    margin-top: 150px;
+    padding-top: 50%;
+    margin-bottom: 180px;
+  }
+  .study_wrap img {
+    padding-bottom: 2%;
+  }
+}
+/* responsive end */
 /* section03 end */
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-9-16 14:13:54
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation bounce-in-top
- * ----------------------------------------
- */
- .bounce-in-top {
-	-webkit-animation: bounce-in-top 3s ease-in-out both;
-	        animation: bounce-in-top 3s ease-in-out both;
-}
- @-webkit-keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-            transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes bounce-in-top {
-  0% {
-    -webkit-transform: translateY(-500px);
-            transform: translateY(-500px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    -webkit-transform: translateY(-65px);
-            transform: translateY(-65px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  72% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  81% {
-    -webkit-transform: translateY(-28px);
-            transform: translateY(-28px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  90% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  95% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
