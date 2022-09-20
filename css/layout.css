@@ -164,6 +164,7 @@ header nav ul li a {
     padding: 5% 0;
   }
 }
+
 /* responsive end */
 /* header end */
 
@@ -209,4 +210,58 @@ footer .email {
   padding-left: 52px;
   background:url(../img/email.png)
 }
+
+/* responsive start */
+@media screen and (max-width:1600px) {
+  footer {
+    padding: 2.5%;
+  }
+  .animated-title {
+    font-size: 190px;
+    padding-bottom: 6.5%;
+  }
+  .footer_link {
+    padding: 0 3% 3.5% 3%;
+  }
+  .footer_link ul:first-child {
+    padding-right: 25.5%;
+  }
+  .footer_link ul li a {
+    font-size: 1.8rem;
+  }
+  footer .email {
+    font-size: 1rem;
+    padding-left: 3%;
+  }
+}
+@media screen and (max-width:1280px) {
+  .animated-title {
+    font-size: 180px;
+  }
+  .footer_link ul li a {
+    font-size: 1.9rem;
+  }
+  footer .email {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .animated-title {
+    font-size: 150px;
+    padding-bottom: 3%;
+  }
+  .footer_link ul li a {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:768px) {
+  .animated-title {
+    height: 170px;
+    font-size: 100px;
+  }
+  .footer_link ul li a {
+    font-size: 1.2rem;
+  }
+}
+/* responsive end */
 /* footer end */
