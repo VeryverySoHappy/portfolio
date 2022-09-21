@@ -38,7 +38,7 @@
 }
 .section01 h2,
 .section01 p {
-  animation: maintext 1s linear;
+  animation: maintext 0.4s linear;
 }
 @keyframes maintext {
   0% {
@@ -120,7 +120,7 @@
 }
 @media screen and (max-width:768px) {
   .section01 .portfolio {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   .section01 h2 {
     font-size: 6.5rem;
@@ -150,7 +150,10 @@
     margin-bottom: 14%;
   }
   .section01 p {
-    width: 68%;
+    width: 100%;
+  }
+  .section01 .section01_info {
+    font-size: 1rem;
   }
   #scroll_btn {
     bottom: 4.8%;
@@ -514,7 +517,7 @@
   .portfolio_explain a,
   .ex_title,
   .ex_title ul {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .portfolio_explain p {
     height: 130px;
@@ -587,6 +590,7 @@
   }
   .portfolio_explain .ex_text {
     overflow-y: scroll;
+    margin: 1.3rem 0;
   }
   .ex_text::-webkit-scrollbar {
     width: 10px;
