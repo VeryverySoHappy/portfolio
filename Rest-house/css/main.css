@@ -6,17 +6,14 @@
   box-sizing: border-box;
   position: relative;
 }
-
 /* visual_slide start */
 .visual_slide .swiper-pagination-progressbar {
   background: #fff;
   position: absolute;
 }
-
  :root {
   --swiper-theme-color: rgba(0, 0, 0, .25);
 }
-
 .slide_box {
   position: absolute;
   top: 186px;
@@ -84,53 +81,43 @@
   z-index: 1;
   box-sizing: border-box;
 }
-
 .select_travel p {
   font-size: 26px;
 }
-
 .tabmenu {
   margin-top: 44px;
   position: relative;
 }
-
 .tab {
   list-style: none;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
 }
-
 .tab li {
   float: left;
   padding-right: 36px;
   margin-bottom: 37px;
 }
-
 .tab li:last-child {
   padding: 0;
 }
-
 .tab li a {
   display: inline;
   color: #818181;
   text-align: center;
   text-decoration: none;
 }
-
 .tabcont {
   display: none;
 }
-
 ul.tab li.on a {
   color: #887862;
   text-decoration: underline;
 }
-
 .tabcont.on {
   display: block;
 }
-
 /* location start */
 .location input {
   border: 1px solid #f4f4f4;
@@ -143,21 +130,16 @@ ul.tab li.on a {
   box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
   font-size: 16px;
 }
-
 .location input:first-child {
   margin-bottom: 15px;
 }
-
 .location input:focus {
   border: 1px solid #f4f4f4;
 }
-
 .location input:focus::placeholder {
   visibility: hidden;
 }
-
 /* location end */
-
 
 /* date start */
 ::-webkit-datetime-edit {
@@ -166,11 +148,9 @@ ul.tab li.on a {
   border: none;
   border-radius: 5px;
 }
-
 ::-webkit-datetime-edit-fields-wrapper {
   background-color: #fff;
 }
-
 ::-webkit-datetime-edit-year-field {
   color: #222;
 }
@@ -559,7 +539,7 @@ float: right;
   position: relative;
   width: 1719px;
   height: 921px;
-  margin: 0 100px 97px 100px;
+  margin: 0 auto 97px auto;
 }
 .award_wrap {
   position: absolute;
