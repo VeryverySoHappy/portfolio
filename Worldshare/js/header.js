@@ -60,6 +60,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.toggle_btn').on('click', function(){
       $('.header > .inner').find('.responsive').toggleClass('on')
+      $('.header_ > .inner').find('.toggle').toggleClass('on')
       $('.header').toggleClass('on');
     })
   })

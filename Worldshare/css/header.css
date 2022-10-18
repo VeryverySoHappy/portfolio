@@ -8,16 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 header .logo {
   background: url(../img/header/logo.png) no-repeat;
   width: 89px;
   height: 50px;
   text-indent: -9999px;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  transform: translateY(-50%);
 }
 nav {
   margin: 0 auto;
   position: relative;
+  z-index: 9999;
 }
 .gnb {
   display: flex;
@@ -43,27 +49,35 @@ nav {
   display: none;
   height: 300px;
   font-size: 1rem;
+  z-index: 9999;
 }
 .over {
   background-color: #f47d29;
   height: 300px;
 }
 .subwrap li {
-  line-height: 1.8rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 .subbg{
   width: 100%; 
-  height: 300px;
+  height: 389px;
   display:none;
-  background-color: #000;
   position: absolute; 
   top: 0px;
   left: 0;
-  z-index: -1;
+  z-index: 10;
+  background-color: #fff;
   border-bottom:1px solid #d5d5d5;
 }
-.sign_group {display: flex;}
+.sign_group {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 999;
+}
 .sign_group a {margin-right: 15px;}
 .sign_group a:last-child {margin: 0;}
 .toggle_btn {

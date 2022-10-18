@@ -34,15 +34,7 @@
   <title>월드쉐어</title>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/plugin/slick/slick.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.toggle-btn').on('click', function () {
-        $('.header_ > .inner').find('.toggle').toggleClass('on')
-        console.log('hi')
-      })
-    })
-  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -115,8 +107,33 @@
       </div>
     </header>
     <section class="section01">
-      <a href="javascript:void(0)"><img src="./img/main/main.jpg" alt="" class="web"></a>
-      <a href="javascript:void(0)"><img src="./img/main/main_mob.jpg" alt="" class="mob"></a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)"><img src="./img/main/main.jpg" alt="" class="web"></a>
+            <a href="javascript:void(0)"><img src="./img/main/main_mob.jpg" alt="" class="mob"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)"><img src="./img/main/main_02.jpg" alt="" class="web"></a>
+            <a href="javascript:void(0)"><img src="./img/main/main_mob_02.jpg" alt="" class="mob"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)"><img src="./img/main/main_03.jpg" alt="" class="web"></a>
+            <a href="javascript:void(0)"><img src="./img/main/main_mob_03.jpg" alt="" class="mob"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)"><img src="./img/main/main_04.jpg" alt="" class="web"></a>
+            <a href="javascript:void(0)"><img src="./img/main/main_mob_04.jpg" alt="" class="mob"></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)"><img src="./img/main/main_05.jpg" alt="" class="web"></a>
+            <a href="javascript:void(0)"><img src="./img/main/main_mob_05.jpg" alt="" class="mob"></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>  
     </section>
     <section class="section02">
       <div class="section02_wrap">
@@ -350,6 +367,7 @@
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/main.js"></script>
 </body>
